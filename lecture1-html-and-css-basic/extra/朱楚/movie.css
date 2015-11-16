@@ -1,0 +1,145 @@
+﻿body {
+    background-image : url(./img/background.png);
+    padding : 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+}
+
+* {
+    font-family :Verdana , Tahoma , sans-serif ;
+}
+
+html {
+    padding : 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+}
+
+#main {
+    width: 800px;
+    border: 4px gray solid;
+    margin: auto;
+}
+
+#banner {
+    background-image : url(./img/bannerbackground.png);
+    background-repeat : repeat-x ;
+    display: block;
+    text-align :center;
+    height: 50px;
+    
+}
+#banner img{
+    height:50px;
+}
+
+body h1 {
+    margin-right :auto ;
+    margin-left :auto ;
+    text-align :center ;
+    font-weight : bold;
+    font-size : 24pt;
+    font-family : Tahoma , Verdana , sans-serif ;
+}
+
+#leftcentered {
+    width: 550px;
+    padding: 0px 0px 0px 0px;
+}
+.review {
+    background-color:#E1D697;
+    display: block ;
+    font-weight :bold;
+    font-size :8pt;
+    margin: auto;
+    border:2px solid gray;
+    padding: 8px 8px 8px 8px;
+}
+.review img {
+    float: left;
+    margin-right: 5px;
+}
+.reviewer {
+    font-style: italic; 
+    font-size :8pt;
+    margin-right: 5px;
+    margin-bottom : 3em;
+}
+.reviewer img {
+    float: left;
+}
+
+.column {
+    margin-top: 15px;
+    width: 47%;
+    display: inline-block;
+}
+#column-left {
+    margin-left:2%;
+    margin-right:0%;
+    float:left;
+}
+#column-right {
+    margin-left : 0%;
+    margin-right : 2%;
+    float: right;
+}
+#overview {
+    width: 250px;
+    background-color:#A2B964;
+    float:right;
+    font-family : Arial , sans-serif ;
+    font-size : 8pt;
+    margin: 0px 0px 0px 0px;
+}
+#overview dl {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#overview dt {
+    font-weight :bold;
+    margin-top: 1em;
+}
+#overview dd {
+    margin-bottom : 1em;
+}
+
+#rottentop {
+    background-image :url("./img/rottenbackground.png");
+    background-repeat :repeat-x ;
+    height: 83px;
+}
+#textrotten {
+    font-size :48pt;
+    font-weight :bold;
+    color :red;
+    margin-left :100px;
+}
+#rottentop img {
+    position :absolute ;
+}
+#textrotten span{
+    font-size :8pt;
+    color : white;
+    font-weight :normal ;
+}
+
+#pagebar {
+    text-align :center;
+    display: block ;
+    width: 800px;
+    background-color :#A2B964;
+    height: 30px;
+    margin-top: 926px;
+}
+
+.w3c {
+    position:fixed;
+    right:0px;
+}
+
+#w3c1 {
+    bottom: 40px;
+}
+
+#w3c2 {
+    bottom: 0px;
+}

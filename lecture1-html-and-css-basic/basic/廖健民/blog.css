@@ -1,0 +1,134 @@
+* {
+    font-family: 'Microsoft YaHei', Helvetica, sans-serif;
+}
+
+body {
+    background-image:url('img/background.jpg'); 
+    background-repeat: repeat
+}
+
+h1, h2 {
+    /* todo */
+    margin:auto;
+    margin-left:auto;margin-right:auto;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    width: 800px;
+    background-image: url('img/wrapper-background.png');
+    background-repeat: repeat;
+    margin:auto;
+    /* todo */
+}
+
+/* 头部header的样式 */
+#header h1 {
+    /* todo */
+    font-family: Century Gothic, Futura, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 96px;
+    color: #D5D5D5;
+    margin:auto;
+}
+
+#header nav ul {
+    border-bottom: dotted 1px #ddd;
+    margin:auto;
+}
+
+#header nav ul li a {
+    /* todo */
+    color:white;
+    text-decoration: none;
+    margin:auto;
+}
+
+/* 相册样式 */
+#gallery {
+    /* todo */
+    background-color: #DFF5FF;
+    margin:auto;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+    margin:auto;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+
+}
+
+.gallery-heading .gallery-icon img {
+    /* todo */
+    height: 60px;
+    width: 60px;
+}
+
+.gallery-heading p.time {
+    /* todo */
+    margin: auto;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #656565;
+}
+
+/*评论输入框*/
+#comment {
+    border-bottom: 1px solid #bbb;
+    border-radius:3px;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 708px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    /* todo */
+}
+
+button.comment-submit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    cursor:pointer;
+    /* todo */
+
+}
+
+/*评论列表*/
+.comments-count {
+    font-size: 13px;
+    color: #fff;
+}
+
+/* todo */
+
+.comment-item {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.comment-item p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+}
+#num {
+    color: #d32;
+}
+.centre {
+    text-align: center !important;
+}

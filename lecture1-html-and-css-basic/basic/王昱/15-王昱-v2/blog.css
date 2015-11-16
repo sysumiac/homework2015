@@ -1,0 +1,144 @@
+﻿* {
+    font-family: 'Microsoft YaHei', Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('./img/background.jpg');
+    background-repeat: repeat-xy;
+    background-attachment: fixed;
+    /* todo */
+}
+
+h1, h2 {
+    text-align: center;
+    /* todo */
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    width: 800px;
+    background-image: url('./img/wrapper-background.png');
+    background-image: url('./img/wrapper-background.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 auto;
+    /* todo */
+}
+
+/* 头部header的样式 */
+#header h1 {
+    color:#D5D5D5;
+    font-family: "Century Gothic", Futura, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 96px;
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* todo */
+}
+
+#header nav ul {
+    border-bottom: none 1px #ddd;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+    /* todo */
+}
+
+#header hr{
+    border-style: dashed;
+    margin-left: -1.05cm;
+    color: white;
+}
+/* 相册样式 */
+#gallery {
+    background-color: #DFF5FF;
+    /* todo */
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+}
+
+.gallery-heading .gallery-icon img {
+    width: 60px;
+    height: 60px;
+    /* todo */
+}
+
+.gallery-heading p.time {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    text-color: #656565;
+    /* todo */
+}
+
+/*评论输入框*/
+#comment {
+    border-bottom: 1px solid #bbb;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 708px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    resize: none;
+    /* todo */
+}
+
+button.comment-submit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color: #E6E6E6;
+    border: solid;
+    border-width: 1px;
+    border-color: #CCC;
+    cursor: pointer;
+    /* todo */
+
+}
+
+/*评论列表*/
+.comments-count {
+    font-size: 13px;
+    color: #fff;
+}
+.comments-count span{
+    color: #d32;
+}
+/* todo */
+
+.comment-item {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.comment-item p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+}

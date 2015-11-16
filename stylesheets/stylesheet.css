@@ -3,7 +3,7 @@ Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
-@import url(github-light.css);
+@import url(pygment_trac.css);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -39,6 +39,9 @@ ol, ul {
   list-style: none;
 }
 
+blockquote, q {
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -53,7 +56,7 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: '微软雅黑', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,13 +65,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-family: '微软雅黑', 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
 h1 {
   font-size: 36px;
   font-weight: 700;
+  font-family: 'Meddon', 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -148,15 +152,6 @@ img {
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none;
-}
-
 pre, code {
   width: 100%;
   color: #222;
@@ -168,6 +163,9 @@ pre, code {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+
+
+
 }
 
 pre {
@@ -195,20 +193,17 @@ blockquote {
   border-left: 3px solid #bbb;
 }
 
-
 ul, ol, dl {
   margin-bottom: 15px
 }
 
-ul {
-  list-style-position: inside;
-  list-style: disc;
+ul li {
+  list-style: inside;
   padding-left: 20px;
 }
 
-ol {
-  list-style-position: inside;
-  list-style: decimal;
+ol li {
+  list-style: decimal inside;
   padding-left: 20px;
 }
 

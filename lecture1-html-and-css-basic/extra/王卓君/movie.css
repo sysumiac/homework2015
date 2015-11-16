@@ -1,0 +1,134 @@
+* {
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+	background-image: url(img/background.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+/*顶部图*/
+#banner {
+	background-image: url(img/bannerbackground.png);
+	background-repeat: repeat-x;
+	text-align: center;
+}
+
+/*最外层容器*/
+#wrapper {
+	width: 800px;
+	height: ;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px gray solid;
+}
+
+/*左方部分*/
+#section1 {
+	width: 550px;
+	float: left;
+}
+
+/*左方heading*/
+#heading {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 24pt;
+	text-align: center;
+}
+
+#rotten {
+	width: 550px;
+	background-image: url(img/rottenbackground.png);
+	background-repeat: repeat-x;
+	height: 83px;
+	float: left;
+}
+
+#rotten > img {
+	float: left;
+}
+
+#percentage {
+	font-size: 48pt;
+	color:red;
+	font-weight: bold;
+}
+
+#p88 {
+	font-size: 8pt;
+	color: white;
+}
+
+/*评论部分*/
+.review {
+	border: 2px gray solid;
+	padding: 8px;
+	background-color: #E1D697;
+    font-size: 8pt;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.review > img {
+	float: left;
+	margin-right: 5px;
+}
+
+.review + p {
+	margin-bottom: 3em;
+}
+
+.review + p > img {
+	float: left;
+}
+
+#part_1 {
+	width: 47%;
+    float: left;
+   	margin-left: 2%;
+}
+
+#part_2 {
+	width: 47%;
+	margin-left: 2%;
+	float: left;
+}
+
+/*右方部分*/
+#section2 {
+	width: 250px;
+	background-color: #a2b964;
+	margin-left: 550px;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+
+#section2 > dl {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#section2 > dl > dt {
+	margin-top: 1em;
+	font-weight: bold;
+
+}
+
+/*底部栏*/
+#bar {
+	background-color: #a2b964;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+	text-align: center;
+}
+
+/*右下bottom*/
+#W3C {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
