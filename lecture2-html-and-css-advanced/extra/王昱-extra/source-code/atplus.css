@@ -1,0 +1,183 @@
+*{
+	font-family: 'Microsoft Yahei', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+.info{
+	position: fixed;
+	left: 250px;
+	top: 250px;
+	width: 140px;
+	height: 140px;
+	transform: scale(0.1, 0.1);
+	background-color: gray;
+	border-radius: 50%;
+	visibility:hidden;
+}
+
+.info span{
+	padding-left: 10px;
+}
+
+.page{
+	font-weight: 900;
+	color: white;
+}
+
+.user{
+	transform: translate(34px, 14px);
+}
+
+.comment{
+    position: relative;
+    left: 35px;
+    top: 18px;
+	font-size: 200%;
+}
+
+.mine{
+	font-weight: 900;
+	color: cyan;
+}
+
+.posted{
+	transform: translate(20px, 22px);
+}
+
+.like{
+	transform: translate(70px, -7px);
+}
+
+.button{
+	display:block;
+	height: 40px;
+	width: 40px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.button img{
+	transform: translate(10px, 8px);
+}
+
+.mask{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	visibility:hidden;
+	transform: scale(0.1, 0.1);
+}
+
+.history{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	visibility:hidden;
+	transform: scale(0.1, 0.1);
+}
+
+.message{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	visibility:hidden;
+	transform: scale(0.1, 0.1);
+}
+
+.unread{
+	transform: translate(28px, -33px);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 25px;
+	background-color: red;
+	border-radius: 50%;
+	color: white;
+	font-weight: 900;
+}
+
+.setting{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	visibility:hidden;
+	transform: scale(0.1, 0.1);
+}
+
+.sign{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	visibility:hidden;
+	transform: scale(0.1, 0.1);
+}
+
+.icon{
+	position: fixed;
+	left: 300px;
+	top: 300px;
+	display:block;
+	height: 30px;
+	width: 30px;
+	background: gray url("./assets/images/atplus_white.png") no-repeat center;
+	border-radius: 50%;
+}
+
+.icon img{
+	position: relative;
+	left: 2px;
+	top: 4px;
+}
+
+#button:hover *{
+	visibility: visible;
+}
+
+#button:hover .icon{
+	background: blue url("./assets/images/atplus_green.png") no-repeat center;
+	background-size: 26px 20px;
+	transform: scale(2, 2);
+}
+
+#button:hover .info{
+	transform: translate(0, -110px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover .mask{
+	transform: translate(-80px, -30px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover .history{
+	transform: translate(-90px, 10px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover .message{
+	transform: translate(-80px, 50px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover .setting{
+	transform: translate(-45px, 75px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover .sign{
+	transform: translate(-5px, 85px) scale(1, 1);
+	transition: transform 1s;
+}
+
+#button:hover{
+	position: fixed;
+	left: 210px;
+	top: 136px;
+	height: 300px;
+	width: 200px;
+}

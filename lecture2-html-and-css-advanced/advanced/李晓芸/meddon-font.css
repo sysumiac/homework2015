@@ -1,0 +1,7 @@
+h1 {
+  font-family: 'Meddon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Meddon'), url('meddon-font.woff') format('woff');
+  text-align: center;
+}
