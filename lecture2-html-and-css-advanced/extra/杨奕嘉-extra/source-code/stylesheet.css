@@ -1,0 +1,197 @@
+
+#at-plus-container {
+	position: fixed;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+}
+
+ul {
+	list-style: none;
+}
+
+/*info-bar*/
+#info-bar {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: grey;
+	overflow: hidden;
+	position: relative;
+	top: -15px;
+	left: 15px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#button:hover #info-bar {
+	top: -160px;
+	left: -50px;
+	width: 140px;
+	height: 140px;
+}
+
+.user {
+	position: relative;
+	left: 15px;
+}
+
+.comment {
+	position: relative;
+	top: 5px;
+	left: 0px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.posted {
+	position: relative;
+	top: 10px;
+	left: -10px;
+}
+
+.like {
+	position: relative;
+	top: -15px;
+	left: 40px;
+}
+
+.page span {
+	margin-left: 10px;
+	color: white;
+}
+
+.mine span {
+	margin-left: 10px;
+	color: green;
+}
+
+/*control-ring-container*/
+
+.button {
+	opacity: 0;
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	border-radius: 50%;
+	top: 15px;
+	left: 0;
+	width: 0;
+	height: 0;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.button:hover {
+	background-color: black;
+}
+
+#button:hover .button {
+	width: 30px;
+	height: 30px;
+	opacity: 1;
+}
+
+.mask {
+	background-image: url(assets/images/nomask.png);
+}
+
+.history {
+	background-image: url(assets/images/history.png);
+}
+
+.message {
+	background-image: url(assets/images/message.png);
+}
+
+.unread {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: -5px;
+	left: 20px;
+}
+
+.setting {
+	top: 15px;
+	left: 0;
+	background-image: url(assets/images/setting.png);
+}
+
+.sign {
+	top: 15px;
+	left: 0;
+	background-image: url(assets/images/signin.png);
+}
+
+#button:hover .mask {
+	top: 0;
+	left: -70px;
+}
+
+#button:hover .history {
+	top: 35px;
+	left: -60px;
+}
+
+#button:hover .message {
+	top: 70px;
+	left: -40px;
+}
+
+#button:hover .setting {
+	top: 100px;
+	left: -10px;
+}
+
+#button:hover .sign {
+	top: 110px;
+	left: 30px;
+}
+
+/*icon*/
+.icon {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('assets/images/atplus_white.png') no-repeat grey center;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.5s ease 0.2s;
+	-moz-transition: all 0.5s ease 0.2s;
+	-ms-transition: all 0.5s ease 0.2s;
+	-o-transition: all 0.5s ease 0.2s;
+}
+
+#button:hover .icon {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('assets/images/atplus_green.png') no-repeat blue center;
+    background-size: 75%;
+    top: -10px;
+    left: -10px;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
