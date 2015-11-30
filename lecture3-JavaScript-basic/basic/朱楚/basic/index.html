@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Megrez's Blog</title>
+        <link type="text/css" rel="stylesheet" href="blog.css"/>
+        <link type="text/css" rel="stylesheet" href="./字体文件/meddon-font.css"/>
+        <script charset="gb2312" type="text/javascript" src="./comments.js"> </script>
+        <script charset="gb2312" type="text/javascript" src="./time.js"> </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <!-- 网页头部，包括导航栏和大标题 -->
+            <header id="header">
+                <h1>Megrez's Blog</h1>
+                <nav>
+                    <div class="navigator">
+                            <a href="#">
+                                <span class="text">文章</span>
+                            </a>
+                    </div>
+                    <div class="navigator">
+                            <a href="#">
+                                <span class="text">相册</span>
+                            </a>
+                    </div>
+                    <div class="navigator">
+                            <a href="http://weibo.com/i490815101/">
+                                <span class="text">关于</span>
+                            </a>
+                    </div>
+                </nav>
+                <!--todo-->
+            </header>
+
+             <!-- 相册 -->
+            <div id="gallery">
+                <div class="gallery-heading">
+                    <div class="gallery-icon">
+                        <img src="./img/gallery-icon.png" alt="相册"/>
+                    </div>
+                    <h2>MY GALLERY</h2>
+                    <p class="time" id="clock">2015-10-25 19:00:00</p>
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/slide-1.jpg" alt="slide-1">
+                </div>
+            </div>
+
+             <!-- 发布评论 -->
+            <div id="comment">
+                <div class="comment-textarea">
+                    <img src="img/avatar-default.png" alt="avatar-default">
+                    <textarea class="comment" id="commentInput" placeholder="说点什么吧~~"></textarea>
+                </div>
+                <button class="comment-submit" onclick="update()">发布</button>
+            </div>
+
+             <!--评论列表-->
+            <div id="comments-list">
+                <div class="comments-count">
+                    共 <span id="commentsCounter">1</span> 条评论
+                </div>
+                <ul class="comments">
+                    <li class="comment-item"><p>我是评论啦啦啦~~~大家要按时完成作业啦啦啦~~~</p></li>
+                </ul>
+            </div>
+        </div> 
+        <script language=javascript>
+            var clock = self.setInterval("tick()", 200);
+        </script>
+    </body>
+</html>

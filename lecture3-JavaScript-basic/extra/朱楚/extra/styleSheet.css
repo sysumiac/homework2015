@@ -1,0 +1,36 @@
+* {
+    font-family: 'Microsoft YaHei', Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    overflow:hidden;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(180,180,180);
+    border: 1px solid red;
+    position: absolute;
+}
+
+#arguments {
+    text-align: center;
+}
+
+#arguments p{
+    display: inline-block;
+}
+
+input {
+    width: 100px;
+}

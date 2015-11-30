@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Balls Simulation</title>
+        <link type="text/css" rel="stylesheet" href="styleSheet.css"/>
+        <script charset="gb2312" type="text/javascript" src="./BallsSimulation.js"> </script>
+    </head>
+    <body>
+        <button onclick="addBall()">Add</button>
+        <button onclick="deleteTheLast()">Delete</button>
+        <button style="width:150px" onclick="deleteAll()">Delete All</button>
+        <div id="arguments">
+            <p>初速度X: <input type="text" placeholder="0" id="vx"/></p>
+            <p>初速度Y: <input type="text" placeholder="0" id="vy" /></p>
+            <p>位置X: <input type="text" placeholder="random" id="x" /></p>
+            <p>位置Y: <input type="text" placeholder="random" id="y" /></p>
+        </div>
+        <div id="Container"></div>
+        <script>
+            window.requestAnimationFrame(simulate);
+        </script>
+    </body>
+</html>
