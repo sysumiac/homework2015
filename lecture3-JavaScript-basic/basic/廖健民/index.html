@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title >Lionel's Blog</title>
+        <!--todo-->
+        <link type="text/css" rel="stylesheet" href="blog.css"/>
+		<link type="text/css" rel="stylesheet" href="meddon-font.css"/>
+		<style type="text/css">
+		<h1>
+		@font-face {
+				font-family: 'Meddon';
+				font-style: normal;
+				font-weight: 400;
+				src: local('Meddon'), url('meddon-font.woff') format('woff');
+					}
+		</h1>
+		</style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <!-- 网页头部，包括导航栏和大标题 -->
+            <header id="header">
+                <h1 id="h1">Lionel's Blog</h1>
+                <nav>
+                    <ul class="navigator">
+                        <li class="nav-item">
+                            <a href="#">
+                                <div class="text">   文章   </div>
+								<div class="textcentre">   相册   </div>
+								<div class="text">   关于   </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--todo-->
+            </header>
+            <div id="gallery">
+                <div class="gallery-heading">
+                    <div class="gallery-icon">
+                        <!-- todo -->
+                        <img src="img/gallery-icon.png" alt="icon of gallery"/>
+                    </div>
+                    <h2><strong>MY GALLERY</strong></h2>
+                    <p class="time"  ><strong id="clock">2015-10-25 19:00:00</strong></p>
+                </div>
+
+                <div class="gallery-slides">
+                        <img src="img/slide-1.jpg" alt="slide-1"/>
+                </div>
+            </div>
+
+             <!-- 发布评论 -->
+            <div id="comment">
+                <div class="comment-textarea">
+                    <img src="img/avatar-default.png" alt="avatar-default">
+                    <textarea class="comment" id="pinglun">说点什么吧~~</textarea>
+                </div>
+                <button class="comment-submit" type="button" onclick="plusNum()">发布</button>
+            </div>
+
+             <!--评论列表-->
+            <div id="comments-list">
+                <div class="comments-count">
+                    共 <span id="num">0</span> 条评论
+                </div>
+                <ul class="comments">
+                    <li class="comment-item">
+                        <p id="div1">
+                            我是评论啦啦啦~~~大家要按时完成作业啦啦啦~~
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<script type="text/javascript">
+			var a=0;
+			function plusNum()
+			{
+			var x=document.getElementById("pinglun").value;
+
+			if (x.length<4) {
+				alert("输入内容长度少于4 个字符");
+				}else{
+					a=a+1;
+					document.getElementById("num").innerHTML=a;
+					document.getElementById("pinglun").value="";
+					var para=document.createElement("p");
+					var node=document.createTextNode(x);
+					para.appendChild(node);
+			}
+			var element=document.getElementById("div1");
+			element.appendChild(para);
+			}
+			var int=self.setInterval("clock()",50);
+			function clock()
+			  {
+			  var t=new Date();
+			  document.getElementById("clock").value=t;
+			  document.getElementById("clock").innerHTML=t;
+  			}
+		</script>
+    </body>
+
+</html>

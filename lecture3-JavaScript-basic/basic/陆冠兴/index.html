@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+	
+		<script language="javascript">
+		var sum = 1;
+		
+		
+		function tijiao() {
+		var now=new Date();
+		var vy=now.getFullYear();
+		var vm=now.getMonth()+1;
+		var vd=now.getDate();
+		var vh=now.getHours();
+		var vmi=now.getMinutes();
+		var vs=now.getSeconds();		
+		document.getElementById("pls").innerText=sum; sum = sum + 1;
+		
+		var wenzi = document.getElementById("hua").value;
+		
+		/*if (strlen(wenzi) < 4)
+		{document.write("less than 4 words")}不会检测字数*/
+	
+
+		var parentNode = document.getElementById("pinglun");
+		var sourceNode = document.getElementById("pinglunkuai");
+		var t = vy + "-" + vm + "-" + vd + "-" + vh + ":" + vmi + ":" +vs;	
+		for (var i = 1; i < 2; i++) { 
+		var clonedNode = sourceNode.cloneNode(true); // 克隆节点 
+		clonedNode.setAttribute("style", "margin-top:2%; color:#F00; border-color: #FFFF00;"); // 重复节点
+		clonedNode.innerHTML = wenzi +"<br/>"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ t;
+		sourceNode.parentNode.appendChild(clonedNode); // 在父节点插入克隆的节点 
+		}	
+		
+		}
+		
+		</script>
+	
+        <meta charset="utf-8" />
+        <title>Lgx's Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog.css">
+		<link rel="stylesheet" type="text/css" href="字体文件/meddon-font.css">
+        
+    </head>
+
+    <body background="./img/background.jpg">
+
+        <div id="wrapper">
+
+            
+            <header id="header">
+                <h1 class="font-face">Lgx's Blog</h1><!-- 网页头部，包括导航栏和大标题 -->
+			<div class="tou">
+                            
+                              <span class="daohang" >文章</span>
+                            
+                              <span class="daohang" >相册</span>
+                        
+                              <span class="daohang">关于</span>
+								
+  			</div>
+            </header>
+
+             <!-- 相册 -->
+			 <center><div class="zhongjian">
+            <div id="gallery">
+                <div class="gallery-heading">
+                    <div class="gallery-icon">
+                        <img id="tubiao" src="img/gallery-icon.png" alt="这是图片替代的文字">                    </div>
+                    <h2>MY GALLERY</h2>
+                    <p class="time">2015-10-25 19:00:00</p>
+                </div>
+
+ 			<center><div id="tupian">
+                        <img src="img/slide-1.jpg" alt="slide-1">
+			</div></center>		
+			
+			</div></center>
+			
+			
+             <!-- 发布评论 -->
+            <div id="comment">
+                <div class="comment-textarea" >
+                    <img src="img/avatar-default.png" alt="avatar-default" align="top">
+                    <textarea class="comment" placeholder="说点什么吧~~" id="hua"></textarea>
+            
+			</div>
+                <div class="tijiao"><button class="comment-submit" style="cursor: pointer" onClick="tijiao()">发布</button></div>
+            </div>
+			
+
+             <!--评论列表-->
+            <div class="pinglunqu">
+                <div class="comments-count">
+                    共 <span class="com-num" id="pls">1</span> 条评论
+                </div>
+                <div class="comments" id="pinglun">
+                    <div class="comment-item" id="pinglunkuai">
+                        <p id="pinglun">
+                            请文明评论，不能少于4个字
+                        </p>
+                    </div>
+					<br><br><br>
+            </div>
+        </div> 
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+.font-face {
+  font-family: 'Meddon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Meddon'), url('meddon-font.woff') format('woff');
+}
+
+#tupian {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-width: 50px;
+}
+
+.zhongjian {
+	width:90%;
+}
+
+.tijiao {
+padding-left:94%;
+}
+
+.tou {
+height: 50px;
+text-align:center;
+padding-bottom: 50px;
+}
+
+.daohang {
+text-decoration:none;
+padding-left: 20px;
+padding-right: 20px;
+font-size: 25px;
+color:#FFFFFF;
+margin: 20px 20px 40px 40px;
+border: #FFFFFF 1px solid;
+border-radius: 10px
+}
+
+.pinglunqu {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+
+#tubiao {
+ width:80px; height:80px} 
+}

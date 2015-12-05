@@ -1,0 +1,163 @@
+* {
+    font-family: 'Microsoft YaHei', Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Meddon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Meddon'), url('meddon-font.woff') format('woff');
+}
+
+body {
+    background-image: url('./img/background.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    width:900px;
+    height: 1500px;
+    background-image: url('./img/wrapper-background.png');
+    background-repeat: repeat;
+    margin:0 auto;
+    box-shadow: 3px 3px 3px white;
+    box-shadow: 0 0 3px white;
+}
+
+/* 头部header的样式 */
+#header h1 {
+    font-family: Meddon;
+    font-weight: lighter;
+    font-size: 96px;
+    color: #D5D5D5;
+}
+
+#header nav ul {
+    list-style: none;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#header nav ul li {
+    float: left;
+}
+
+#header nav ul li a {
+    text-align:center;
+    border:solid 1px white;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* 相册样式 */
+#gallery {
+    height: 600px;
+    background-color: #DFF5FF;
+    margin: 200px 50px 0px 50px;
+    box-shadow: 3px 3px 3px white;
+    box-shadow: 0 0 3px white;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+}
+
+.gallery-heading .gallery-icon {
+    top:-30px;
+    text-align: center;
+    position: relative;
+}
+
+.gallery-heading .gallery-icon img {
+    height: 60px;
+    width: 60px;
+}
+
+#time {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #656565;
+}
+.img {
+    text-align:center;
+}
+
+/*评论输入框*/
+.comment-textarea img {
+    border-radius: 3px;
+    color: #e6e6e6;
+    border: solid 1px #ccc;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.comment-textarea textarea.comment {
+    height: 46px;
+    width: 730px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    margin: 20px 50px 0px 0px;
+    float: right;
+}
+
+button.comment-submit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    float: right;
+    height: 35px;
+    width: 70px;
+    margin: 15px 50px;
+}
+
+#comments-list {
+    top:40px;
+    position: relative;
+}
+/*评论列表*/
+.comments-count {
+    margin-left: 50px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.comments-count span {
+    color: #d32;
+}
+
+.comments {
+    padding:0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.comment-item{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    list-style: none;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.comment-item p{
+    margin:0;
+}
