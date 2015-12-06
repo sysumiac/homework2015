@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<title>真实世界小球模拟</title>
+		<link rel="stylesheet" type="text/css" href="bound.css"/>
+	</head>
+	
+	<body>
+		<div id = "container"></div>
+		<input type = "button" value = "放置小球" style = "display:block;margin-bottom: 20px;" onclick = "createball()"/>
+		<input type = "button" value = "删除小球" style = "display:block;margin-bottom: 20px;" onclick = "removeball()"/>
+		<input type = "button" value = "清空" style = "display:block;margin-bottom: 20px;" onclick = "clearall()"/>
+		<input type = "button" value = "初速度设置" style = "display:block;margin-bottom: 20px;" onclick = "resetspeed()"/>
+		<input type = "button" value = "重力加速度" style = "display:block;margin-bottom: 20px;" onclick = "resetgravity()"/>
+		<input type = "button" value = "碰撞损失" style = "display:block;margin-bottom: 20px;" onclick = "resetattritionrate()"/>
+		<div>球数<span id = "counter">0</span>个</div>
+		<script src = "bound.js"></script>
+	</body>
+</html>

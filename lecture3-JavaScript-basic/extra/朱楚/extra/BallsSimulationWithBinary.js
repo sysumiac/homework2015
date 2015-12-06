@@ -27,11 +27,33 @@ function balls(id) {
         } else {
             this.y = document.documentElement.clientHeight - 2 * this.radius + 1;
         }
-        this.limit();
-        this.x += this.speedX;
-        this.y += this.speedY;
+        var l = 0;
+        var r = 1;
+        var m = 0;
+        var count = 0;
+        while (Math.abs(l - r) > 1e-5) {
+            count++;
+            if (count > 100) {
+                alert(l + ' ' + r + ' ' + m);
+            }
+            m = (l + r) / 2;
+            this.x += this.speedX * m;
+            this.y += this.speedY * m;
+            if (this.checkOverlap()) {
+                r = m;
+            } else {
+                l = m;
+            }
+            this.x -= this.speedX * m;
+            this.y -= this.speedY * m;
+        }
+        this.x += this.speedX * m;
+        this.y += this.speedY * m;
         if (this.y + 2 * this.radius > document.documentElement.clientHeight)
             this.y = document.documentElement.clientHeight - 2 * this.radius + 1;
+        this.style.left = this.x + "px";
+        this.style.top = this.y + "px";
+        this.checkCollision();
         //alert(this.x + ' ' + this.y + ' ' + this.speedX + ' ' + this.speedY + ' ' + this.groundFlag + ' ' + this.groundV);
     }
     b.bounce = function (obj) {
@@ -97,7 +119,7 @@ function balls(id) {
             speedY: this.speedY
         }
         return tmp;
-    }
+    }/*
     b.setSafeLocation = function (obj) {
         var dx = obj.x - this.x;
         var dy = obj.y - this.y;
@@ -108,15 +130,29 @@ function balls(id) {
         this.y -= dety;
         obj.x += detx;
         obj.y += dety;
+    }*/
+    b.checkOverlap = function () {
+        for (var i = 0; i < ballList.length; i++) {
+            if (ballList[i].id === this.id) continue;
+            if (this.distanceTo(ballList[i]) < this.radius + ballList[i].radius - 2) return true;
+        }
+        return false;
+    }
+    b.checkCollision = function () {
+        for (var i = 0; i < ballList.length; i++) {
+            if (ballList[i].id === this.id) continue;
+            if (this.distanceTo(ballList[i]) <= this.radius + ballList[i].radius)
+                this.collisionWith(ballList[i]);
+        }
     }
     b.collisionWith = function (obj) {
         var dis = this.distanceTo(obj);
         if (this.distanceTo(obj) <= this.radius + obj.radius) {
+            //this.setSafeLocation(obj);
             var tmp = this.smallClone();
             this.bounce(obj);
             this.groundFlag = obj.groundFlag = 0;
             obj.bounce(tmp);
-            b.setSafeLocation(obj);
         }
     }
     b.limit = function () {
@@ -135,10 +171,6 @@ function balls(id) {
             }
         }
     }
-    b.updateCoordinate = function() {
-        this.style.left = this.x + "px";
-        this.style.top = this.y + "px";
-    }
     return b;
 }
 
@@ -148,7 +180,7 @@ function addBall() {
         alert("ÇòÌ«¶àÀ²£¡µçÄÔÒªÕ¨À²£¡");
         return;
     }
-    var ball = balls(ballList.length + 1);
+    var ball = balls(ballList.length+1);
     var vx = document.getElementById("vx").value;
     var vy = document.getElementById("vy").value;
     if (!isNaN(vx) && vx !== '') ball.speedX = parseInt(vx);
@@ -192,7 +224,6 @@ function simulate() {
             ballList[i].collisionWith(ballList[j]);
         }
         ballList[i].limit();
-        ballList[i].updateCoordinate();
     }
     window.requestAnimationFrame(simulate);
 }
